@@ -23,7 +23,7 @@ export default function JobSearchPage() {
 
       <div>
         <Image
-          src="/images/CityLandscape.svg"
+          src="/images/CityLandscape.png"
           alt="Jobify logo"
           width={100}
           height={100}

@@ -26,14 +26,14 @@ export default function SearchBar() {
           <input
             aria-label="Location"
             placeholder="Location"
-            className="w-full bg-transparent text-sm outline-none placeholder:text-zinc-400 dark:text-zinc-100 dark:placeholder:text-zinc-500 py-3"
+            className="w-full bg-transparent text-sm outline-none placeholder:text-zinc-400 dark:text-zinc-100 dark:placeholder:text-zinc-500 py-3 text-black"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
           />
         </label>
 
         <label
-          className="group relative flex items-center gap-3  px-4 py-3 ring-1 ring-zinc-200 focus-within:ring-2 focus-within:ring-blue-500 dark:ring-zinc-700"
+          className="group relative flex items-center gap-3  px-4 py-3 ring-1 ring-zinc-200 focus-within:ring-2 focus-within:ring-blue-500 dark:ring-zinc-700 text-black"
           style={{
             outline: "none",
             border: "none",
@@ -45,7 +45,7 @@ export default function SearchBar() {
           <input
             aria-label="Keyword"
             placeholder="Keyword"
-            className="w-full bg-transparent text-sm outline-none placeholder:text-zinc-400 dark:text-zinc-100 dark:placeholder:text-zinc-500"
+            className="w-full bg-transparent text-sm outline-none placeholder:text-zinc-400 dark:text-zinc-100 dark:placeholder:text-zinc-500 text-black"
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
           />
@@ -63,7 +63,7 @@ export default function SearchBar() {
           <input
             aria-label="Salary Range"
             placeholder="Salary Range"
-            className="w-full bg-transparent text-sm outline-none placeholder:text-zinc-400 dark:text-zinc-100 dark:placeholder:text-zinc-500"
+            className="w-full bg-transparent text-sm outline-none placeholder:text-zinc-400 dark:text-zinc-100 dark:placeholder:text-zinc-500 text-black"
             value={salary}
             onChange={(e) => setSalary(e.target.value)}
           />

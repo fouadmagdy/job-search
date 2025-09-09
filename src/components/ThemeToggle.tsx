@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 function getSystemPreference(): "dark" | "light" {
   if (typeof window === "undefined") return "light";
@@ -33,10 +34,9 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      aria-label="Toggle dark mode"
-      className="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-xs font-medium text-zinc-700 shadow-sm transition hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700"
+      className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-yellow-400 transition-all"
     >
-      {theme === "dark" ? <span>Light</span> : <span>Dark</span>}
+      {theme === "dark" ? <FaSun size={20} /> : <FaMoon size={20} />}
     </button>
   );
 }
