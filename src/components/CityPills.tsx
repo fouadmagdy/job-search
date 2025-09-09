@@ -16,7 +16,7 @@ export default function CityPills({
       {cities.map((city) => (
         <button
           key={city}
-          className="rounded-full border border-zinc-200 bg-white px-4 py-2 text-xs font-medium text-zinc-600 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-zinc-800 hover:shadow-md dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
+          className="rounded-full border border-zinc-200 bg-[color:#F9FBFF] px-4 py-2 text-xs font-medium text-zinc-600 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:text-zinc-800 hover:shadow-md dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200"
           aria-label={city}
         >
           {city}

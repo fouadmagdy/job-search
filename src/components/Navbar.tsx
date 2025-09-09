@@ -29,27 +29,27 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
-          <div className="space-x-4 text-sm font-medium ">
+          <div className="space-x-4 text-sm font-sans">
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white pr-6"
               href="/"
             >
               Featured Jobs
             </Link>
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white pr-6"
               href="/projects"
             >
               Salary Trend
             </Link>
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white pr-6"
               href="/blog"
             >
               Where To Fly
             </Link>
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white pr-6"
               href="/about"
             >
               Covid Policy
@@ -65,19 +65,19 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-6">
           <div className="space-x-4 text-sm font-medium">
-            <ThemeToggle />
             <Link
               href="#"
-              className="hidden rounded-xl px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-blue-100  dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 md:inline-flex"
+              className="hidden rounded-xl px-8 py-4 text-sm font-medium text-zinc-700 hover:bg-blue-200  dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 md:inline-flex"
             >
               Help
             </Link>
             <Link
               href="#"
-              className="rounded-xl px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-blue-100 dark:bg-zinc-800 dark:text-zinc-200 dark:ring-zinc-700 dark:hover:bg-zinc-700"
+              className="rounded-xl px-8 py-4  text-sm font-medium text-zinc-700 transition-colors hover:bg-blue-200  dark:bg-zinc-800 dark:text-zinc-200 dark:ring-zinc-700 dark:hover:bg-zinc-700"
             >
               Login
             </Link>
+            <ThemeToggle />
           </div>
         </div>
 
