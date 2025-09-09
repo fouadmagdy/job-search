@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <header className="w-full">
       <nav
-        className={`mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8 ${
+        className={`mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8  ${
           menuOpen ? "flex-col md:flex-row" : ""
         }`}
       >
@@ -29,33 +29,33 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-6">
-          <div className="space-x-4 text-sm font-medium">
+          <div className="space-x-4 text-sm font-medium ">
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
               href="/"
             >
               Featured Jobs
             </Link>
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
               href="/projects"
             >
               Salary Trend
             </Link>
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
               href="/blog"
             >
               Where To Fly
             </Link>
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
               href="/about"
             >
               Covid Policy
             </Link>
             <Link
-              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:hover:text-white"
+              className="transition-colors text-zinc-700 hover:text-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:hover:text-white"
               href="/contact"
             >
               Blog
