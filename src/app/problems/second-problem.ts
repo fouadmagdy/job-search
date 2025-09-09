@@ -1,6 +1,6 @@
 const jobIds = [101, 102, 103];
 
-async function fetchJob(id: number) {
+export async function fetchJob(id: number) {
   const jobs = [
     { id: 101, title: "Frontend Developer" },
     { id: 102, title: "Backend Developer" },
@@ -15,7 +15,7 @@ async function fetchJob(id: number) {
   });
 }
 
-async function fetchAllJobs(jobIds: number[]) {
+export async function fetchAllJobs(jobIds: number[]) {
   // Use Promise.all to fetch all jobs in parallel && order
   return await Promise.all(jobIds.map((id) => fetchJob(id)));
 }

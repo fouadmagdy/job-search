@@ -23,7 +23,7 @@ const jobs: Job[] = [
   { id: 4, title: "DevOps Engineer" },
 ];
 
-function merge(applications: Application[], jobs: Job[]) {
+export function merge(applications: Application[], jobs: Job[]) {
   // count applications per jobId
   const appCount = applications.reduce(
     (acc: { [key: number]: number }, app) => {

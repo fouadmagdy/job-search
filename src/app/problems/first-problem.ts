@@ -5,7 +5,7 @@ const input = [
   "  UX Designer",
 ];
 
-function jobTitles(titles: string[]): string[] {
+export function jobTitles(titles: string[]): string[] {
   // trim each title, convert to lowercase
   const formattedTitles = titles.map((title) => title.trim().toLowerCase());
   // remove duplicates

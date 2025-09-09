@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function JobSearchPage() {
   return (
-    <main className="min-h-dvh bg-gradient-to-b from-white to-sky-50 dark:from-zinc-950 dark:to-zinc-900 flex flex-col justify-around">
+    <main className="min-h-dvh bg-gradient-to-b from-white to-sky-50 dark:from-zinc-950 dark:to-zinc-900 flex flex-col justify-between">
       <Navbar />
 
       <section className="relative mx-auto flex max-w-7xl flex-col items-center px-4 pb-24 pt-12 sm:pt-16 md:pt-20">
