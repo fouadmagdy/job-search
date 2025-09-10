@@ -14,6 +14,7 @@ export default function SearchBar() {
     >
       <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4">
         <label
+          htmlFor="location-input"
           className="group relative flex items-center gap-3 px-4 py-3 
              ring-1 ring-zinc-200 dark:ring-zinc-700
              focus-within:ring-2 focus-within:ring-blue-500
@@ -26,9 +27,12 @@ export default function SearchBar() {
             borderRight: "1px solid #DDE0F0",
           }}
         >
-          <span className="sr-only">Location</span>
+          <span className="text-xs font-medium text-zinc-700 dark:text-zinc-200 mr-2">
+            Location
+          </span>
           <input
-            aria-label="Location"
+            id="location-input"
+            name="location"
             placeholder="Location"
             className="w-full bg-white dark:bg-zinc-900/70 text-sm outline-none 
                placeholder:text-zinc-400 
@@ -37,11 +41,16 @@ export default function SearchBar() {
                transition-colors duration-300"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
+            aria-required="false"
           />
-          <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 ease-in-out group-focus-within:w-full"></span>
+          <span
+            className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 ease-in-out group-focus-within:w-full"
+            aria-hidden="true"
+          ></span>
         </label>
 
         <label
+          htmlFor="keyword-input"
           className="group relative flex items-center gap-3 px-4 py-3 
              ring-1 ring-zinc-200 dark:ring-zinc-700
              focus-within:ring-2 focus-within:ring-blue-500
@@ -54,9 +63,12 @@ export default function SearchBar() {
             borderRight: "1px solid #DDE0F0",
           }}
         >
-          <span className="sr-only">Keyword</span>
+          <span className="text-xs font-medium text-zinc-700 dark:text-zinc-200 mr-2">
+            Keyword
+          </span>
           <input
-            aria-label="Keyword"
+            id="keyword-input"
+            name="keyword"
             placeholder="Keyword"
             className="w-full bg-white dark:bg-zinc-900/70 text-sm outline-none 
                placeholder:text-zinc-400 
@@ -65,11 +77,16 @@ export default function SearchBar() {
                transition-colors duration-300"
             value={keyword}
             onChange={(e) => setKeyword(e.target.value)}
+            aria-required="false"
           />
-          <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 ease-in-out group-focus-within:w-full"></span>
+          <span
+            className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 ease-in-out group-focus-within:w-full"
+            aria-hidden="true"
+          ></span>
         </label>
 
         <label
+          htmlFor="salary-input"
           className="group relative flex items-center gap-3 px-4 py-3 
              ring-1 ring-zinc-200 dark:ring-zinc-700
              focus-within:ring-2 focus-within:ring-blue-500
@@ -81,9 +98,12 @@ export default function SearchBar() {
             boxShadow: "none",
           }}
         >
-          <span className="sr-only">Salary Range</span>
+          <span className="text-xs font-medium text-zinc-700 dark:text-zinc-200 mr-2">
+            Salary Range
+          </span>
           <input
-            aria-label="Salary Range"
+            id="salary-input"
+            name="salary"
             placeholder="Salary Range"
             className="w-full bg-white dark:bg-zinc-900/70 text-sm outline-none 
                placeholder:text-zinc-400 
@@ -92,14 +112,19 @@ export default function SearchBar() {
                transition-colors duration-300"
             value={salary}
             onChange={(e) => setSalary(e.target.value)}
+            aria-required="false"
           />
-          <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 ease-in-out group-focus-within:w-full"></span>
+          <span
+            className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 ease-in-out group-focus-within:w-full"
+            aria-hidden="true"
+          ></span>
         </label>
 
         <div className="flex items-stretch ml-auto">
           <button
             type="submit"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-500 px-10 py-3 text-sm font-semibold text-white shadow-md shadow-blue-600/30 transition hover:translate-y-[-1px] hover:bg-blue-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 sm:w-auto h-9/12 m-auto mr-4"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-10 py-3 text-sm font-semibold text-white shadow-md shadow-blue-600/30 transition hover:translate-y-[-1px] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 sm:w-auto h-9/12 m-auto mr-4"
+            aria-label="Search jobs"
           >
             Search Jobs
           </button>
